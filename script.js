@@ -33,6 +33,8 @@ function check(){
 }
 	
  var messages = ["Impressive!", "Not so good!", "Cmon you can do better"];
+ var pictures = ["img/dababy.jpg", "img/darkrapper.jpg", "img/funnyoldman.jpg"]
+
 
  var logic;
  if (correct < 3) {
@@ -51,7 +53,8 @@ if (correct > 5) {
 
 	document.getElementById("after_submit").style.visibility = "visible";
 
-	document.getElementById("message").innerHTML = messages[logic];
+    document.getElementById("message").innerHTML = messages[logic];
 	document.getElementById("number_correct").innerHTML = "Thats " + correct + " correct.";
+	document.getElementById("picture").src = pictures[logic];
 
 	}
