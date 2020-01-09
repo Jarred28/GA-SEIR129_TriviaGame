@@ -32,11 +32,26 @@ function check(){
 		correct++;
 }
 	
-	
+ var messages = ["Impressive!", "Not so good!", "Cmon you can do better"];
+
+ var logic;
+ if (correct < 3) {
+	logic = 1;
+}
+
+if (correct > 0 && correct < 7) {
+	logic = 2;
+}
+
+if (correct > 5) {
+	logic = 0;
+}
+
+
 
 	document.getElementById("after_submit").style.visibility = "visible";
 
-	
+	document.getElementById("message").innerHTML = messages[logic];
 	document.getElementById("number_correct").innerHTML = "Thats " + correct + " correct.";
 
 	}
