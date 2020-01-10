@@ -11,46 +11,89 @@
 
 
 <body>
-<h1>2019 Hip/Hop Trivia Game</h1>
+<h1 class="text-center">2019 Hip/Hop Trivia Game</h1>
 
 
-<form id = "game" name = "game">
+<form id = "game" name = "game" onsubmit="check(event)">
 
 
-<p class = "questions">Where is Dababy from?</p>
-<input id = "textbox" type = "text" name = "question1">
+<label for="textbox" class = "questions">Where is Dababy from?</label>
+<input id = "textbox" type = "text" name = "question1" required>
 
 <p class = "questions">Which Famous Rapper Died on 3-31-2019 </p>
-<input type = "radio" id = "MC" name = "question2" value = "xxxtentacion"> xxxtentacion<br>
-<input type = "radio" id = "MC" name = "question2" value = "Lil Peep"> Lil Peep<br>
-<input type = "radio" id = "MC" name = "question2" value = "Nipsey Hussle"> Nipsey Hussle<br>
-<input type = "radio" id = "MC" name = "question2" value = "Juice Wrld"> Juice Wrld<br>
+<input id="option11" type = "radio" name = "question2" value = "xxxtentacion">
+<label for="option11">xxxtentacion</label>
+<br>
+<input id="option12" type = "radio" name = "question2" value = "Lil Peep">
+<label for="option12">Lil Peep</label>
+<br>
+<input id="option13" type = "radio" name = "question2" value = "Nipsey Hussle">
+<label for="option13">Nipsey Hussle</label>
+<br>
+<input id="option14" type = "radio" name = "question2" value = "Juice Wrld">
+<label for="option14"> Juice Wrld</label>
+<br>
+
 <p class = "questions">Who was the top selling rap artist of 2019?</p>
 
-<input type = "radio" id = "MC" name = "question3" value = "Travis Scott"> Travis Scott<br>
-<input type = "radio" id = "MC" name = "question3" value = "Post Malone"> Post Malone<br>
-<input type = "radio" id = "MC" name = "question3" value = "Gunna"> Gunna<br>
-<input type = "radio" id = "MC" name = "question3" value = "Drake"> Drake<br>
+<input id="option21" type = "radio" name = "question3" value = "Travis Scott">
+<label for="option21"> Travis Scott</label>
+<br>
+<input id="option22" type = "radio" name = "question3" value = "Post Malone">
+<label for="option22">Post Malone</label>
+<br>
+<input id="option23" type = "radio" name = "question3" value = "Gunna">
+<label for="option23">Gunna</label> 
+<br>
+<input id="option24" type = "radio" name = "question3" value = "Drake">
+<label for="option24">Drake</label> 
+<br>
+
 <p class = "questions">Which rap artist blew up the most in 2019?</p>
 
-<input type = "radio" id = "MC" name = "question4" value = "Dababy"> Dababy<br>
-<input type = "radio" id = "MC" name = "question4" value = "Lil Xan"> Lil Xan<br>
-<input type = "radio" id = "MC" name = "question4" value = "Lil Pump"> Lil Pump<br>
-<input type = "radio" id = "MC" name = "question4" value = "Lil Keed"> Lil Keed<br>
+<input id = "option31" type = "radio" name = "question4" value = "Dababy">
+<label for="option31">Dababy</label> 
+<br>
+<input id="option32" type = "radio" name = "question4" value = "Lil Xan">
+<label for="option32">Lil Xan</label>
+<br>
+<input id="option33" type = "radio" name = "question4" value = "Lil Pump">
+<label for="option33">Lil Pump</label>
+<br>
+<input id="option34" type = "radio" name = "question4" value = "Lil Keed">
+<label for="option34">Lil Keed</label> 
+<br>
+
 <p class = "questions">Did Young Thugs Album "Just For Fun" go platnium?</p>
 
-<input type = "radio" id = "MC" name = "question5" value = "Yes"> Yes<br>
-<input type = "radio" id = "MC" name = "question5" value = "No"> No<br>  
+<input id="question41" type = "radio" name = "question5" value = "Yes">
+<label for="question41">Yes</label> 
+ <br>
+<input id="question42" type = "radio" name = "question5" value = "No">
+<label for="question42">No</label>
+ <br>  
+
 <p class = "questions">True or False? Playboi Carti dropped an album in 2019.</p>
 
 
-<input type = "radio" id = "MC" name = "question6" value = "True"> True<br>
-<input type = "radio" id = "MC" name = "question6" value = "False"> False<br>
+<input id="question51" type = "radio" name = "question6" value = "True">
+<label for="question51">True</label> 
+<br>
+<input id="question52" type = "radio" name = "question6" value = "False">
+<label for="question52">False</label>
+ <br>
+
 <p class="questions">How many records first week did Tyler The Creator sell with his album "IGOR"?</p>
 
-<input type = "radio" id = "MC" name = "question7" value = "76,000"> 76,000<br>
-<input type = "radio" id = "MC" name = "question7" value = "165,000"> 165,000<br>
-<input type = "radio" id = "MC" name = "question7" value = "123,000"> 123,000<br>
+<input id="question61" type = "radio" name = "question7" value = "76,000">
+<label for="question61">76,000</label> 
+ <br>
+<input id="question62" type = "radio" name = "question7" value = "165,000">
+<label for="question62">165,000</label> 
+ <br>
+<input id="question63" type = "radio" name = "question7" value = "123,000">
+<label for="question63">123,000</label> 
+ <br>
 
 
 
@@ -61,7 +104,7 @@
 
 
 
-<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+<button id = "button" type = "submit">I'm finished!</button>
 
 
 </form>

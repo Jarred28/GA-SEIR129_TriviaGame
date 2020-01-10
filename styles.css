@@ -1,7 +1,90 @@
 body {
     font-family: 'Cute Font', cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#game {
+	background: red;
+	padding: 10px 20px 10px 20px;
+	width: 100%;
+	border-radius: 20px;
+	float: left;
+    box-sizing: border-box;
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+#game.shrinked {
+    width: 60%;
+}
+
+input {
+	margin-bottom: 20px;
+	display: block;
+}
+
+#textbox {
+	height: 28px;
+	font-size: 22px;
+	border-radius: 8px;
+	border: none;
+    padding-left: 8px;
+    margin-top: 15px;
+}
+
+
+#button {
+	background: silver;
+	border: none;
+	border-radius: 8px;
+	padding: 12px;
+	color: red;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+
+
+
+#button:hover {
+	background: yellow;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+
 }
 
 #after_submit {
-    visibility: hidden;
+	display: none;
+	background: purple;
+	padding: 10px 20px 10px 20px;
+	width: calc(40% - 20px);
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+    box-sizing: border-box;
+
+}
+
+#after_submit.show {
+    display: block;
+}
+
+#picture {
+	width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+label, p.questions {
+    font-size: 22px;
+}
+
+input[type="radio"] {
+	display: inline;
 }
