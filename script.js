@@ -56,6 +56,6 @@ if (correct > 5) {
 
     document.getElementById("message").innerHTML = messages[logic];
 	document.getElementById("number_correct").innerHTML = "Thats " + correct + " correct.";
-	document.getElementById("picture").src = pictures[logic];
+	document.querySelector("#picture > img").src = pictures[logic];
 
 	}

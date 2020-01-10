@@ -61,7 +61,7 @@ input {
 #after_submit {
 	display: none;
 	background: purple;
-	padding: 10px 20px 10px 20px;
+	padding: 10px 20px 20px 20px;
 	width: calc(40% - 20px);
 	border-radius: 20px;
 	float: left;
@@ -76,9 +76,17 @@ input {
 }
 
 #picture {
-	width: 100%;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	overflow: hidden;
+	max-height: calc(100vh - 300px);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#picture img {
+	width: 100%;
 }
 
 label, p.questions {
