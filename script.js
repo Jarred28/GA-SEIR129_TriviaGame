@@ -40,7 +40,7 @@ function check(event){
  var logic;
  if (correct < 4) {
 	logic = 1;
-}
+} 
 
 if (correct > 2 && correct < 7) {
 	logic = 2;
