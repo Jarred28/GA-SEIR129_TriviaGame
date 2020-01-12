@@ -25,7 +25,7 @@ function check(event){
 }
 	if (question5 === "Yes") {
 		correct++;
-}
+} 
 	if (question6 === "False") {
 		correct++;
 }
